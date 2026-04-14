@@ -16,7 +16,6 @@
 Muitos brasileiros não possuem acesso à uma educação de qualidade, e menos ainda quando se trata do aspecto financeiro. Neste contexto, surgem alguns problemas como a não identificação de um impacto de uma taxa de juros abusiva em financiamentos, empréstimos e até faturas de cartão de crédito. Outro problema que surge é o total desconhecimento a respeito sobre investimentos, o que acaba abrindo espaço para aplicações de golpes financeiros, dos quais promotem rentabilidades fora dos padrões oferecidos pelos mercados e livres de qualquer tipo de risco. Além disso, fatores como compras impulsivas, ausência de uma reserva de emergência e falta de planejamento intensificam o problema, podendo influenciar até mesmo a aposentadoria de muitos.
 A partir disso, uma aplicação será feita para ser usada em escolas, aplicativos do governo e páginas web.
 
-
 ![matrizCSD](images/MatrizCSD.png)
 
 > **Links Úteis**:
@@ -77,3 +76,7 @@ As razões pelas quais escolhemos os objetivos específicos foi o fato de termos
 >   O público-alvo da aplicação é composto por uma diversidade de faixas etárias, incluindo crianças, jovens, adultos e idosos que desejam melhorar sua organização financeira, mas que possuem pouco ou nenhum conhecimento na área.
 >   Sobre o perfil tecnológico, espera-se que os usuários tenham alguma familiaridade com computadores e celuares e não precisam de ferramentas financeiras complexas. Portanto a aplicação deve ser simples, didática e acessível.
 >   Quanto às relações hierárquicas, a aplicação é voltada para uso individual, sem necessidade de níveis complexos de acesso.
+
+O público-alvo da aplicação é composto por uma diversidade de faixas etárias, incluindo crianças, jovens, adultos e idosos que desejam melhorar sua organização financeira, mas que possuem pouco ou nenhum conhecimento na área.
+Sobre o perfil tecnológico, espera-se que os usuários tenham alguma familiaridade com computadores e celuares e não precisam de ferramentas financeiras complexas. Portanto a aplicação deve ser simples, didática e acessível.
+Quanto às relações hierárquicas, a aplicação é voltada para uso individual, sem necessidade de níveis complexos de acesso.
