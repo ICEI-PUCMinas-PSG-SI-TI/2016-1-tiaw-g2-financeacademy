@@ -19,6 +19,15 @@
 
 Coloque aqui os slides da apresentação
 
+![slide1](images/slide1)
+![slide2](images/slide2)
+![slide3](images/slide3)
+![slide4](images/slide4)
+![slide5](images/slide5)
+![slide6](images/slide6)
+![slide7](images/slide7)
+
+
 ## Vídeo
 
 No caso de apresentação gravada, insira aqui o link do vídeo de apresentação.
