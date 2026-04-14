@@ -17,6 +17,8 @@
 > item textualmente comentando e complementando o que está apresentado
 > nas imagens.
 
+
+
 ## Arquitetura da solução
 
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
@@ -47,3 +49,7 @@ notificado para o usuário (Tela 8) e em seguida ele é redirecionado
 para a Tela 2.
 
 ![Exemplo de UserFlow](images/userflow.jpg)
+
+
+
+![userflow](images/FluxoDeUsuarios.png)

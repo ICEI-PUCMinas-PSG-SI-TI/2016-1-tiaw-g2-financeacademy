@@ -22,6 +22,9 @@
 > - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
 
 
+![userflow](images/FluxoDeUsuarios.png)
+
+
 ## Wireframes
 
 ![Exemplo de Wireframe](images/wireframe-example.png)
@@ -34,3 +37,10 @@
 > **Links Úteis**:
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
 > - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+
+
+
+![wireframe](images/Wireframe1.png)
+![wireframe2](images/Wireframe2.png)
+
+**link para o protótipo interativo:** https://miro.com/welcomeonboard/RWRLRTJ0dFZrRDNEZ0M5citpUXl0RGNGbWdCbm9tZGgyaVhWN1laK0JpRm01QnpQUjVzelluVXlHYUsxOUwzeGkwNHlRRC9SdVlxOFk1YnFVa0U0RUxmN2NUMUdONUZZdVBablN6WE9ka0dCTGMxZ0xlWFVoTk8yVm1DaUtKWXJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=448885759791
