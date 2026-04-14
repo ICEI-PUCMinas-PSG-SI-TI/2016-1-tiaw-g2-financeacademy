@@ -19,13 +19,13 @@
 
 Coloque aqui os slides da apresentação
 
-![slide1](images/slide1)
-![slide2](images/slide2)
-![slide3](images/slide3)
-![slide4](images/slide4)
-![slide5](images/slide5)
-![slide6](images/slide6)
-![slide7](images/slide7)
+![slide1](images/slide1.png)
+![slide2](images/slide2.png)
+![slide3](images/slide3.png)
+![slide4](images/slide4.png)
+![slide5](images/slide5.png)
+![slide6](images/slide6.png)
+![slide7](images/slide7.png)
 
 
 ## Vídeo
