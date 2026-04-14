@@ -1,17 +1,20 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`Falta de educação financeira`  
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`
+`Sistemas de Informação`
 
-`SEMESTRE`
+`01`
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- Andréia Lopes do Couto Santos
+- Henrique Shevchenko da Cunha Lopes Ferreira
+- Luís Felipe de Oliveira Silva
+- Thiago Henrique Marques Soares
+- Thiago Pereira Figueiredo
 
 > Inclua a lista dos membros da equipe com seus nomes completos.
 
