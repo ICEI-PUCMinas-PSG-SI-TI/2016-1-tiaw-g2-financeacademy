@@ -6,6 +6,20 @@
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
 > realizar a especificações do projeto
 
+![mapaDosStakeHolders](images/StakeHolders.png)
+
+**Pesquisa e entendimento do problema:**
+
+**Endividamento**
+A falta de educação financeira no Brasil leva ao endividamento, agravado pelo fácil acesso ao crédito. Em 2021, 69,7% das famílias estavam endividadas e 26,7% inadimplentes, com destaque para o uso do cartão de crédito. O cartão de crédito, desde 2010, é a maior causa de endividamento familiar, sendo, em 2021, responsável por 81,8% do total de famílias endividadas. A pesquisa mostra que muitos não sabem administrar suas finanças, e aponta a educação financeira como solução para melhorar a organização do dinheiro e a qualidade de vida.
+
+**Falta de conhecimento sobre investimentos**
+Em novembro de 2025, o banco Máster foi liquidado pelo Banco Central após uma série de irregularidades financeiras, sendo a principal delas a comercialização de CDB's (Certificado de Depósito Bancário) com taxas de retornos impraticáveis chegando a 140% do CDI. Esses produtos acabaram gerando desconfiança no mercado, pois o banco não conseguia honrar com seus compromissos nas datas de vencimento. Esta liquidação acabou prejudicando cerca de 12 milhões de pessoas que tinham seus dinheiros depositados neste banco.
+
+**Dívida financeira na terceira idade**
+A necessidade de cobrir dívidas de cartões de crédito leva muitos idosos a fazerem empréstimos consignados, que comprometem parte da aposentadoria. Dados da Serasa indicam que 18,1% dos mais de 71 milhões de inadimplentes no Brasil têm mais de 60 anos. 
+
+
 ## Personas
 
 Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em
@@ -30,18 +44,6 @@ que aceitem alunos estrangeiros.
 > Lembre-se que você deve ser enumerar e descrever precisamente e
 > personalizada todos os clientes ideais que sua solução almeja.
 
-![mapaDosStakeHolders](images/StakeHolders.png)
-
-**Pesquisa e entendimento do problema:**
-
-**Endividamento**
-A falta de educação financeira no Brasil leva ao endividamento, agravado pelo fácil acesso ao crédito. Em 2021, 69,7% das famílias estavam endividadas e 26,7% inadimplentes, com destaque para o uso do cartão de crédito. O cartão de crédito, desde 2010, é a maior causa de endividamento familiar, sendo, em 2021, responsável por 81,8% do total de famílias endividadas. A pesquisa mostra que muitos não sabem administrar suas finanças, e aponta a educação financeira como solução para melhorar a organização do dinheiro e a qualidade de vida.
-
-**Falta de conhecimento sobre investimentos**
-Em novembro de 2025, o banco Máster foi liquidado pelo Banco Central após uma série de irregularidades financeiras, sendo a principal delas a comercialização de CDB's (Certificado de Depósito Bancário) com taxas de retornos impraticáveis chegando a 140% do CDI. Esses produtos acabaram gerando desconfiança no mercado, pois o banco não conseguia honrar com seus compromissos nas datas de vencimento. Esta liquidação acabou prejudicando cerca de 12 milhões de pessoas que tinham seus dinheiros depositados neste banco.
-
-**Dívida financeira na terceira idade**
-A necessidade de cobrir dívidas de cartões de crédito leva muitos idosos a fazerem empréstimos consignados, que comprometem parte da aposentadoria. Dados da Serasa indicam que 18,1% dos mais de 71 milhões de inadimplentes no Brasil têm mais de 60 anos. 
 
 ![personaLucas](images/PersonaLucas.PNG)
 
