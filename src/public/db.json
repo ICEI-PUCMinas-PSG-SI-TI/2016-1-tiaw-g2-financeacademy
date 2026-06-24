@@ -1,0 +1,26 @@
+{
+  "respostasForm": [
+    {
+      "nivel": "Básico",
+      "faixa": "18-24",
+      "objetivos": [
+        "investimentos",
+        "aposentadoria"
+      ],
+      "salario": "2000",
+      "comentario": "ola",
+      "id": "teuTjBeKmH4"
+    },
+    {
+      "nivel": "Básico",
+      "faixa": "18-24",
+      "objetivos": [
+        "investimentos"
+      ],
+      "salario": "5000",
+      "comentario": "...",
+      "id": "zcBMZIPQPI0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
