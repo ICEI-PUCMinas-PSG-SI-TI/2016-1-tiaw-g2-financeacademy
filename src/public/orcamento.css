@@ -1,0 +1,27 @@
+body {
+    background-color: #1E2640;
+
+}
+
+.btn {
+    background-color: #328C73 !important;
+    color: white !important;
+}
+
+.card {
+    background-color: #174873;
+}
+
+.card-title,
+li,
+h5,
+h1,
+h2
+{
+    color: white;
+}
+
+#resultado,
+#titulo-resultado {
+    display: none;
+}

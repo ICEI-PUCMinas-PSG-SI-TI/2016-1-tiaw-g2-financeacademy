@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="orcamento.css">
+</head>
+
+<body>
+    <h1 id="titulo" class=" text-center m-4">Crie o seu Próprio Orçamento</h1>
+    <div id="formulario">
+
+        <!--Campo renda-->
+
+        <div class="d-flex flex-column align-items-center mt-4">
+            <div class="card mb-3" style="width: 320px;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Informe sua renda</h5>
+                    <h6 class="card-title">Valor:</h6>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="input-renda" class="form-control campo-valor" placeholder="0,00">
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-sm btn-renda mt-3">Adicionar Renda</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Campo despesa-->
+
+            <div class="card mb-3" style="width: 320px;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Informe a despesa</h5>
+                    <h6 class="card-title">Descrição:</h6>
+                    <input type="text" id="input-descricao" class="form-control mb-2">
+                    <h6 class="card-title">Valor:</h6>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="input-despesa" class="form-control campo-valor" placeholder="0,00">
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-sm btn-despesa mt-3">Adicionar Despesa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Botão criar simulação-->
+    <div class="d-flex flex-column align-items-center mt-4">
+        <button id="btn-resultado" type="button" class="btn text-white">
+            Criar Orçamento
+        </button>
+
+    </div>
+
+    <!--Resultado-->
+
+    <!--Lista receitas e despesas-->
+    <div id="resultado">
+        <h1 class = "text-center mb-5">Resultado 📊</h1>
+        <div class="card mb-3 mx-5">
+            <div class="card-body">
+                <h5>Receitas</h5>
+                <ul id="lista-receitas"></ul>
+            </div>
+        </div>
+
+        <div class="card mb-3 mx-5">
+            <div class="card-body">
+                <h5>Despesas</h5>
+                <ul id="lista-despesas"></ul>
+            </div>
+        </div>
+
+        <!--Cards resultados-->
+        <div class="container mt-4">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5>Receitas</h5>
+                            <h2 id="receita"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5>Total Despesas</h5>
+                            <h2 id="despesas"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5>Saldo</h5>
+                            <h2 id="saldo"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Imprime mensagem na tela-->
+        <div id="mensagem" class="d-flex flex-column align-items-center m-4">
+
+        </div>
+
+        <!--Botão nova simulação-->
+        <div class="d-flex flex-column align-items-center m-4">
+            <button id="btn-nova-simulacao" type="button" class="btn text-white">
+                Nova simulação
+            </button>
+        </div>
+
+
+        <script src="orcamento.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
