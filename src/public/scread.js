@@ -17,6 +17,27 @@ if (checkbox.checked) {
 const salario = document.getElementById("salario").value;
 const comentario = document.getElementById("comentario").value;
 
+const camposVazios = [];
+    if (!nivel) 
+      camposVazios.push("Nível");
+    if (!faixa) 
+      camposVazios.push("Faixa salarial");
+    if (objetivos.length === 0) 
+      camposVazios.push("Objetivos (selecione pelo menos um)");
+    if (!salario) 
+      camposVazios.push("Salário");
+    if (!comentario) 
+      camposVazios.push("Comentário");
+    if (camposVazios.length > 0) 
+      {
+        let mensagem = "";
+        for (let i = 0; i < camposVazios.length; i++) 
+          {
+            mensagem += "\n- " + camposVazios[i];
+          }
+        alert("Por favor, preencha os seguintes campos antes de enviar:" + mensagem);
+        return;
+      }
 const dadosUsuario = {
       nivel: nivel,
       faixa: faixa,
