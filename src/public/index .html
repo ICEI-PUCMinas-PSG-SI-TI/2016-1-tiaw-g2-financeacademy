@@ -16,21 +16,22 @@
     </a>
     <ul class="nav nav-pills mx-auto">
   <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Home</a>
+    <a class="nav-link active m-3" aria-current="page" href="#formulario">Home</a>
   </li>
   <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Categorias</a>
+    <a class="nav-link active m-3" aria-current="page" href="#categorias">Categorias</a>
   </li>
   <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Contatos</a>
+    <a class="nav-link active m-3" aria-current="page" href="#rodape">Contatos</a>
   </li>
 </ul>
-<button type="button" class="btn icon-perfil">
+<button type="button" id="btn_meu_perfil" class="btn icon-perfil">
   <span class="me-2">Perfil</span>
   <i class="fa-regular fa-user"></i>
 </button>
   </div>
 </nav>
+<div id="view_home">
 <!--Primeiro bloco-->
 <main>
     <div id="formulario" class="container p-3 mb-2 text-white mt-5 main-um">
@@ -44,7 +45,71 @@
 <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content px-5 py-3">
-<!---->
+    <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" style="color:#174873;">Descubra seu perfil financeiro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <form id="perguntas">
+        <div class="modal-body pt-2">
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Qual é o seu nível de conhecimento financeiro?</label>
+            <select name="nivel" class="form-select" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="Iniciante">Iniciante</option>
+              <option value="Intermediário">Intermediário</option>
+              <option value="Avançado">Avançado</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Qual é a sua faixa etária?</label>
+            <select name="faixa" class="form-select">
+              <option value="" disabled selected>Selecione...</option>
+              <option value="18-24">18 – 24 anos</option>
+              <option value="25-34">25 – 34 anos</option>
+              <option value="35-44">35 – 44 anos</option>
+              <option value="45-54">45 – 54 anos</option>
+              <option value="55+">55 anos ou mais</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Quais são seus objetivos financeiros?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="objetivos" value="investimentos" id="obj_inv">
+              <label class="form-check-label" for="obj_inv">Investimentos</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="objetivos" value="planejamento" id="obj_plan">
+              <label class="form-check-label" for="obj_plan">Planejamento</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="objetivos" value="aposentadoria" id="obj_apos">
+              <label class="form-check-label" for="obj_apos">Aposentadoria</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="objetivos" value="dividas" id="obj_div">
+              <label class="form-check-label" for="obj_div">Dívidas</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="salario" class="form-label fw-semibold">Qual é a sua renda mensal (R$)?</label>
+            <input type="number" class="form-control" id="salario" name="salario" placeholder="Ex: 3000" min="0">
+          </div>
+
+          <div class="mb-3">
+            <label for="comentario" class="form-label fw-semibold">Comentário (opcional)</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="3" placeholder="Conte um pouco sobre sua situação financeira..."></textarea>
+          </div>
+
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -62,23 +127,71 @@
         <div class="row">
             <div class="col mt-4 pb-5">
                 <img src="imagens/imagem2.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Investimentos</button>
+                <a href="investimentos.html" class="btn btn-primary text-white mt-5">Investimentos</a>
             </div>
             <div class="col mt-4 pb-5">
                 <img src="imagens/imagem3.jpg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Planejamentos</button>
+                <a href="planejamentos.html" class="btn btn-primary text-white mt-5">Planejamentos</a>
             </div>
             <div class="col mt-4 pb-5">
                 <img src="imagens/imagem4.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Aposentadoria</button>
+                <a href="aposentadoria.html" class="btn btn-primary text-white mt-5">Aposentadoria</a>
             </div>
             <div class="col mt-4 pb-5">
                 <img src="imagens/imagem5.jpeg" alt="" width="220" height="330">
-                <br><button type="button" class="btn btn-outline text-white mt-5">Dívidas</button>
+                <br><a href="dividas.html" class="btn btn-primary text-white mt-5">Dívidas</a>
             </div>
     </div>
     </div>
 </main>
+
+</div><!-- fim view_home -->
+
+<div id="view_dashboard" style="display:none;">
+  <div class="d-flex" style="min-height:100vh;">
+
+    <!-- Sidebar -->
+    <div class="p-4 border-end" style="width:260px; min-width:260px; background:#fff;">
+      <div class="d-flex align-items-center mb-4 gap-2">
+        <button onclick="toggleView('home')" class="btn btn-sm btn-link p-0 text-secondary">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h5 class="fw-bold m-0" style="color:#174873;">Meu Perfil</h5>
+      </div>
+
+      <p class="text-uppercase small fw-bold text-muted mb-2">Tema do Sistema:</p>
+      <div class="d-flex mb-4">
+        <button class="btn btn-sm flex-fill me-1" style="background:#e9ecef; border-radius:8px 0 0 8px;" onclick="setTheme('light')">Claro</button>
+        <button class="btn btn-sm flex-fill" style="background:#174873; color:#fff; border-radius:0 8px 8px 0;" onclick="setTheme('dark')">Escuro</button>
+      </div>
+
+      <hr>
+
+      <div class="mb-3">
+        <label class="form-label small fw-semibold text-muted">Alterar E-mail:</label>
+        <input type="email" class="form-control form-control-sm" id="dash_input_email" placeholder="novo@email.com">
+      </div>
+      <div class="mb-3">
+        <label class="form-label small fw-semibold text-muted">Alterar Senha:</label>
+        <input type="password" class="form-control form-control-sm" id="dash_input_password" placeholder="••••••••">
+      </div>
+      <button id="dash_save_data" class="btn btn-primary w-100">Atualizar Dados</button>
+    </div>
+
+    <!-- Main area -->
+    <div class="flex-fill p-4" style="background:#f4f6f9;">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold m-0">Configurações</h4>
+        <div class="d-flex gap-2">
+          <button id="btn_meu_perfil" class="btn btn-primary btn-sm px-3">Perfil</button>
+          <button class="btn btn-primary btn-sm px-3 linkCont">Conteúdos</button>
+        </div>
+      </div>
+      <div class="corpo"></div>
+    </div>
+
+  </div>
+</div><!-- fim view_dashboard -->
 <!--Simulação-->
  <div id="sim" class="py-5">
     <h2 class="text-center font-monospace text-white mb-4">Quando você escolhe<br>aprender, você escolhe<br>prosperar.
