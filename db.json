@@ -47,6 +47,36 @@
       "salario": "2200",
       "comentario": "",
       "id": "sjFcb9kbU_0"
+    },
+    {
+      "nivel": "Iniciante",
+      "faixa": "18-24",
+      "objetivos": [
+        "investimentos"
+      ],
+      "salario": "2200",
+      "comentario": "",
+      "id": "K5T_aEWfbVE"
+    },
+    {
+      "nivel": "Iniciante",
+      "faixa": "18-24",
+      "objetivos": [
+        "investimentos"
+      ],
+      "salario": "2200",
+      "comentario": "",
+      "id": "ehMv_4jq8lM"
+    },
+    {
+      "nivel": "Intermediário",
+      "faixa": "25-34",
+      "objetivos": [
+        "aposentadoria"
+      ],
+      "salario": "2200",
+      "comentario": "",
+      "id": "Vys6NpAQSYk"
     }
   ],
   "investimentos": {
@@ -258,6 +288,34 @@
         }
       ],
       "id": "rEBAx_fNTBc"
+    },
+    {
+      "usuarioId": "K5T_aEWfbVE",
+      "objetivos": [
+        "investimentos"
+      ],
+      "conteudosVisitados": [
+        {
+          "nome": "CDB",
+          "pagina": "investimentos.html",
+          "visitadoEm": "2026-06-27T14:11:59.549Z"
+        }
+      ],
+      "id": "bK306RXvMNk"
+    },
+    {
+      "usuarioId": "ehMv_4jq8lM",
+      "objetivos": [
+        "investimentos"
+      ],
+      "conteudosVisitados": [
+        {
+          "nome": "CDB",
+          "pagina": "investimentos.html",
+          "visitadoEm": "2026-06-27T14:14:00.738Z"
+        }
+      ],
+      "id": "F3S6f-t5Pww"
     }
   ],
   "simulacoes": [],

@@ -457,7 +457,7 @@ async function carregarInvestimentos() {
             <div class="card m-2 w-100">
             <div class="card-body">
             <h5 class="card-title"><i class="fa-solid fa-chart-line"></i> ${investimentos.tiposInvestimento[i].nome}</h5>
-            <p class="card-text text-bg-success p-3">${investimentos.tiposInvestimento[i].classificação}</p>
+            <span class="badge text-bg-success p-2 mb-2 d-block" style="width:fit-content">${investimentos.tiposInvestimento[i].classificação}</span>
             <p class="card-text">${investimentos.tiposInvestimento[i].descrição}</p>
             </div>
             </div>
@@ -657,7 +657,7 @@ async function carregarDividas() {
             <div class="card m-2 w-100">
             <div class="card-body">
             <h5 class="card-title"><i class="fa-solid fa-file-invoice-dollar"></i> ${dividas.tiposDivida[i].nome}</h5>
-            <p class="card-text text-bg-danger p-3">${dividas.tiposDivida[i].classificacao}</p>
+            <span class="badge text-bg-danger p-2 mb-2 d-block" style="width:fit-content">${dividas.tiposDivida[i].classificacao}</span>
             <p class="card-text">${dividas.tiposDivida[i].descricao}</p>
             </div>
             </div>
@@ -685,10 +685,11 @@ function ValorInvalido(campo) {
   campo.classList.add("is-invalid");
 }
 
-window.onload = function () {
+// carregamento feito via body onload em cada pagina html
+document.addEventListener('DOMContentLoaded', function() {
   if (document.getElementById('corpoTabela')) carregarHistorico();
   if (document.getElementById('TipoInvestimento')) atualizarLabels();
-};
+});
 
 function atualizarLabels() {
   const tipo = document.getElementById("TipoInvestimento").value;
