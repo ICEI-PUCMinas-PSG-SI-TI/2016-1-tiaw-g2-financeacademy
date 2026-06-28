@@ -1,0 +1,118 @@
+function toggleView(viewName) {
+    const homeView = document.getElementById('view_home');
+    const dashView = document.getElementById('view_dashboard');
+
+    if (viewName === 'dashboard') {
+        homeView.style.display = 'none';
+        dashView.style.display = 'flex'; 
+    } else {
+        homeView.style.display = 'block';
+        dashView.style.display = 'none';
+    }
+}
+
+function switchTab(tabName) {
+    const abaConteudos = document.getElementById('aba_conteudos');
+    const abaSimulacoes = document.getElementById('aba_simulacoes');
+    const abaConfig = document.getElementById('aba_config_perfil');
+    
+    const btnConteudos = document.getElementById('btn_conteudos');
+    const btnSimulacoes = document.getElementById('btn_simulacoes');
+    const btnConfig = document.getElementById('btn_config_perfil');
+    
+    const title = document.getElementById('dash_title');
+
+    abaConteudos.style.display = 'none';
+    abaSimulacoes.style.display = 'none';
+    abaConfig.style.display = 'none';
+
+    btnConteudos.className = "btn btn-tab-inactive";
+    btnSimulacoes.className = "btn btn-tab-inactive";
+    btnConfig.className = "btn btn-tab-inactive";
+
+    if (tabName === 'conteudos') {
+        abaConteudos.style.display = 'block';
+        btnConteudos.className = "btn btn-primary";
+        title.innerText = "Seus Interesses";
+    } else if (tabName === 'simulacoes') {
+        abaSimulacoes.style.display = 'block';
+        btnSimulacoes.className = "btn btn-primary";
+        title.innerText = "Simulações";
+    } else if (tabName === 'config_perfil') {
+        abaConfig.style.display = 'block';
+        btnConfig.className = "btn btn-primary";
+        title.innerText = "Configurações do Perfil";
+    }
+}
+
+function setTheme(themeName = 'dark') {
+    document.body.classList.remove('light-theme', 'dark-theme');
+    document.body.classList.add(themeName + "-theme");
+    
+    const btnLight = document.getElementById('theme_btn_light');
+    const btnDark = document.getElementById('theme_btn_dark');
+    
+    if (themeName === 'light') {
+        if (btnLight) btnLight.classList.add('active');
+        if (btnDark) btnDark.classList.remove('active');
+    } else {
+        if (btnDark) btnDark.classList.add('active');
+        if (btnLight) btnLight.classList.remove('active');
+    }
+}
+
+
+setTheme();
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const profileBtn = document.getElementById("btn_meu_perfil");
+    if (profileBtn) {
+        profileBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleView('dashboard');
+        });
+    }
+
+    const backBtn = document.getElementById('btn_voltar_home');
+    const sidebarHomeBtn = document.getElementById('btn_nav_home');
+
+    if (backBtn) {
+        backBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleView('home');
+        });
+    }
+
+    if (sidebarHomeBtn) {
+        sidebarHomeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleView('home');
+        });
+    }
+
+    const saveBtn = document.getElementById('dash_save_data');
+    if (saveBtn) {
+        saveBtn.onclick = () => {
+            const nome = document.getElementById('dash_input_name').value.trim();
+            const email = document.getElementById('dash_input_email').value;
+            const pass = document.getElementById('dash_input_password').value;
+            
+            if (!nome && !email && !pass) {
+                alert("Por favor, preencha pelo menos um dos campos para atualizar.");
+                return;
+            }
+
+            if (nome) {
+                document.getElementById('dash_user_name').innerText = nome;
+                document.getElementById('profile_name_nav').innerText = nome;
+            }
+            
+            alert("Dados de perfil atualizados com sucesso!");
+            
+            document.getElementById('dash_input_name').value = '';
+            document.getElementById('dash_input_email').value = '';
+            document.getElementById('dash_input_password').value = '';
+        };
+    }
+});
