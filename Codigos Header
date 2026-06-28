@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financy Academy</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
 
+  <div id="view_home">
+    <nav class="navbar bg-body-tertiary m-5 rounded-2">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="logo trabalho educação financeira.png" alt="Financy Academy" width="115" height="100">
+        </a>
+        
+        <ul class="nav nav-pills mx-auto">
+          <li class="nav-item mx-2"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link active" href="#">Categorias</a></li>
+          <li class="nav-item mx-2"><a class="nav-link active" href="#">Contatos</a></li>
+        </ul>
+
+        <button id="btn_meu_perfil" class="icon-perfil">
+           <span id="profile_name_nav">Meu Perfil</span>
+           <i class="fa-solid fa-circle-user fa-2xl"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div id="view_dashboard" style="display: none;" class="dashboard-wrapper">
+    
+    <aside class="sidebar-layout">
+      <div class="sidebar-brand">
+        <img src="logo trabalho educação financeira.png" alt="Logo Financy" class="sidebar-logo">
+      </div>
+      <nav class="sidebar-menu">
+        <button class="sidebar-icon-btn active" id="btn_nav_home" title="Home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="sidebar-icon-btn" title="Notificações">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <button class="sidebar-icon-btn" title="Arquivos">
+          <i class="fa-solid fa-file-lines"></i>
+        </button>
+      </nav>
+    </aside>
+
+    <main class="main-content-dash-container">
+      
+      <header class="dash-header mt-4">
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-solid fa-arrow-left back-icon" id="btn_voltar_home" title="Voltar para Home"></i>
+          <h2 id="dash_title" class="m-0">Seus Interesses</h2>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span id="dash_user_name" class="fw-semibold text-secondary">Usuário</span>
+          <div class="user-avatar-top">
+            <i class="fa-solid fa-circle-user fa-2xl"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-content-dash mb-5">
+        
+        <div class="d-flex gap-3 mb-4 flex-wrap">
+          <button id="btn_conteudos" class="btn btn-primary" onclick="switchTab('conteudos')">
+            <i class="fa-solid fa-book-open me-2"></i>Meus Conteúdos
+          </button>
+          <button id="btn_simulacoes" class="btn btn-tab-inactive" onclick="switchTab('simulacoes')">
+            <i class="fa-solid fa-chart-line me-2"></i>Simulações
+          </button>
+          <button id="btn_config_perfil" class="btn btn-tab-inactive" onclick="switchTab('config_perfil')">
+            <i class="fa-solid fa-user-gear me-2"></i>Configurações do Perfil
+          </button>
+        </div>
+
+    
+        <div id="aba_conteudos">
+          <div class="interest-grid">
+            
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-piggy-bank fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo1">Acessar</button>
+            </div>
+
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-chart-gantt fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo2">Acessar</button>
+            </div>
+
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-arrow-trend-up fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo3">Acessar</button>
+            </div>
+
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-shield-heart fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo4">Acessar</button>
+            </div>
+
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-percent fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo5">Acessar</button>
+            </div>
+
+            <div class="interest-card d-flex align-items-center justify-content-between p-4">
+              <i class="fa-solid fa-credit-card fa-2xl text-success"></i>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalConteudo6">Acessar</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="aba_simulacoes" style="display: none;">
+          <div class="simulation-box p-4 shadow-sm">
+            <h4><i class="fa-solid fa-calculator me-2"></i>Simulador Financeiro</h4>
+            <p class="text-light-50">Área destinada às ferramentas de simulação econômica e de investimentos da Financy Academy.</p>
+          </div>
+        </div>
+
+        <div id="aba_config_perfil" style="display: none;">
+          <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="config-card h-100">
+                <h5 class="fw-bold mb-3"><i class="fa-solid fa-palette me-2"></i>Personalização</h5>
+                <p class="small text-secondary mb-4">Escolha o estilo visual de sua preferência para navegar pela plataforma.</p>
+                
+                <label class="small fw-bold mb-2 d-block">Tema da Interface:</label>
+                <div class="d-flex gap-2">
+                  <button id="theme_btn_light" class="btn btn-sm theme-toggle-btn w-50 active" onclick="setTheme('light')">
+                    <i class="fa-solid fa-sun me-2"></i>Modo Claro
+                  </button>
+                  <button id="theme_btn_dark" class="btn btn-sm theme-toggle-btn w-50" onclick="setTheme('dark')">
+                    <i class="fa-solid fa-moon me-2"></i>Modo Escuro
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="config-card">
+                <h5 class="fw-bold mb-3"><i class="fa-solid fa-shield-halved me-2"></i>Segurança da Conta</h5>
+                <p class="small text-secondary mb-4">Mantenha suas informações de acesso atualizadas para garantir a proteção dos seus dados.</p>
+                
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label small fw-bold mb-1">Nome do Usuário:</label>
+                    <div class="input-group input-group-sm custom-input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" id="dash_input_name" class="form-control" placeholder="Seu nome ou apelido">
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label small fw-bold mb-1">Alterar E-mail atual:</label>
+                    <div class="input-group input-group-sm custom-input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                      <input type="email" id="dash_input_email" class="form-control" placeholder="novo@email.com">
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label class="form-label small fw-bold mb-1">Nova Senha de Acesso:</label>
+                    <div class="input-group input-group-sm custom-input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                      <input type="password" id="dash_input_password" class="form-control" placeholder="Mínimo 8 caracteres">
+                    </div>
+                  </div>
+                  
+                  <div class="col-12 mt-4 text-end">
+                    <button class="btn btn-primary btn-sm px-4 py-2 fw-semibold" id="dash_save_data">
+                      <i class="fa-solid fa-floppy-disk me-2"></i>Salvar Alterações
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="modal fade" id="modalConteudo1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-piggy-bank fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalConteudo2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-chart-gantt fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalConteudo3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-arrow-trend-up fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalConteudo4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-shield-heart fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalConteudo5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-percent fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalConteudo6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-dark">
+        <div class="modal-header justify-content-center border-0 pt-4">
+          <i class="fa-solid fa-credit-card fa-3x text-success"></i>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pb-4">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JavaScript"></script>
+</body>
+</html>
