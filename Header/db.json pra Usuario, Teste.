@@ -1,0 +1,70 @@
+<script>
+const API_URL = "http://localhost:3001/users";
+
+async function carregarUsuario() {
+  const res = await fetch(API_URL);
+  const users = await res.json();
+
+  if (users.length > 0) {
+    const user = users[0];
+    document.getElementById("dash_input_name").value = user.name || "";
+    document.getElementById("dash_input_email").value = user.email || "";
+    document.getElementById("dash_input_password").value = user.password || "";
+    setTheme(user.theme || "light");
+  }
+}
+
+async function salvarUsuario() {
+  const name = document.getElementById("dash_input_name").value.trim();
+  const email = document.getElementById("dash_input_email").value.trim();
+  const password = document.getElementById("dash_input_password").value;
+  const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+
+  const res = await fetch(API_URL);
+  const users = await res.json();
+
+  const dados = { name, email, password, theme };
+
+  if (users.length > 0) {
+    const id = users[0].id;
+    await fetch(`${API_URL}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(dados)
+    });
+  } else {
+    await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(dados)
+    });
+  }
+
+  alert("Dados salvos com sucesso!");
+}
+
+function setTheme(theme) {
+  const btnLight = document.getElementById("theme_btn_light");
+  const btnDark = document.getElementById("theme_btn_dark");
+
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode");
+    btnDark.classList.add("active");
+    btnLight.classList.remove("active");
+  } else {
+    document.body.classList.remove("dark-mode");
+    btnLight.classList.add("active");
+    btnDark.classList.remove("active");
+  }
+}
+
+document.getElementById("dash_save_data").addEventListener("click", salvarUsuario);
+document.getElementById("theme_btn_light").addEventListener("click", () => setTheme("light"));
+document.getElementById("theme_btn_dark").addEventListener("click", () => setTheme("dark"));
+
+window.addEventListener("DOMContentLoaded", carregarUsuario);
+</script>
