@@ -1,0 +1,275 @@
+body { 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body.light-theme { 
+    background-color: #f8f9fa !important; 
+    color: #333333; 
+}
+
+body.dark-theme { 
+    background-color: #1E2640 !important; 
+    color: #ffffff; 
+}
+
+nav.navbar {
+    background-color: #f2f2f2 !important;
+    border: 3px solid #00D4FF !important; 
+    border-radius: 15px !important;
+    box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.3) !important;
+    margin-top: 20px !important; 
+    margin-bottom: 20px !important;
+}
+
+.icon-perfil {
+    color: #328C73 !important; 
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    background: transparent !important;
+    border: none !important;
+    padding: 0;
+}
+
+.icon-perfil:hover { 
+    color: #2ECC71 !important; 
+}
+
+body.dark-theme .icon-perfil {
+    color: #00D4FF !important;
+}
+body.dark-theme .icon-perfil:hover {
+    color: #2ECC71 !important;
+}
+
+.nav-link.active, .btn-primary {
+    background-color: #328C73 !important;
+    border: none !important;
+    color: white !important;
+}
+.btn-primary:hover {
+    background-color: #2ECC71 !important;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.sidebar-layout {
+    width: 130px;
+    background-color: #f3f4f6; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    border-right: 1px solid #e5e7eb;
+    flex-shrink: 0;
+    z-index: 100;
+}
+
+body.dark-theme .sidebar-layout {
+    background-color: #151c33;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-brand {
+    margin-bottom: 50px;
+}
+
+.sidebar-logo {
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar-icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4b5563; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.sidebar-icon-btn:hover, .sidebar-icon-btn.active {
+    color: #328C73;
+    background-color: rgba(50, 140, 115, 0.1);
+}
+
+body.dark-theme .sidebar-icon-btn {
+    color: #9ca3af;
+}
+body.dark-theme .sidebar-icon-btn:hover, body.dark-theme .sidebar-icon-btn.active {
+    color: #00D4FF;
+    background-color: rgba(0, 212, 255, 0.1);
+}
+
+.main-content-dash-container {
+    flex: 1;
+    padding: 0 40px;
+    overflow-y: auto;
+}
+
+.back-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #328C73;
+    transition: transform 0.2s;
+}
+.back-icon:hover {
+    transform: translateX(-3px);
+    color: #2ECC71;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+body.light-theme .dash-header h2 { color: #1E2640; }
+body.dark-theme .dash-header h2 { color: #ffffff; }
+body.dark-theme .dash-header { border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+.user-avatar-top { color: #328C73; }
+body.dark-theme .user-avatar-top { color: #00D4FF; }
+
+body.dark-theme #dash_user_name {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.config-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+body.dark-theme .config-card {
+    background-color: #174873;
+    border: 1px solid #00D4FF;
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.05);
+}
+
+.custom-input-group .form-control {
+    border: 1px solid #cccccc;
+}
+body.dark-theme .custom-input-group .form-control {
+    background-color: #1E2640;
+    border: 1px solid #00D4FF;
+    color: white;
+}
+
+.theme-toggle-btn {
+    border: 2px solid #328C73;
+    color: #328C73;
+    background: transparent;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.theme-toggle-btn.active {
+    background-color: #328C73;
+    color: white;
+}
+body.dark-theme .theme-toggle-btn {
+    border-color: #00D4FF;
+    color: #00D4FF;
+}
+body.dark-theme .theme-toggle-btn.active {
+    background-color: #00D4FF;
+    color: #1E2640;
+}
+
+.btn-tab-inactive {
+    background-color: transparent !important;
+    border: 2px solid #328C73 !important;
+    color: #328C73 !important;
+    font-weight: 500;
+}
+body.dark-theme .btn-tab-inactive {
+    color: #00D4FF !important;
+    border-color: #00D4FF !important;
+}
+
+.interest-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.interest-card {
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+body.light-theme .interest-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+body.dark-theme .interest-card {
+    background-color: #174873;
+    border: 2px solid #00D4FF;
+}
+
+.interest-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0px 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.simulation-box {
+    background-color: #174873;
+    border: 2px solid #00D4FF;
+    border-radius: 15px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .dashboard-wrapper { flex-direction: column; }
+    
+    .sidebar-layout { 
+        width: 100%; 
+        height: auto; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 15px 20px; 
+    }
+    .sidebar-brand { margin-bottom: 0; }
+    
+    .sidebar-logo {
+        width: 70px;
+        height: 60px;
+    }
+    
+    .sidebar-menu { flex-direction: row; gap: 20px; width: auto; }
+    .main-content-dash-container { padding: 0 15px; }
+}
