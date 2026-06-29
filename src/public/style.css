@@ -38,6 +38,17 @@ body{   background-color: #1E2640 !important;
 #sim .simulacao p{
     color: #ADD9B0 ;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /*Footer*/
 #rodape .footer{
     background-color: #f2f2f2;

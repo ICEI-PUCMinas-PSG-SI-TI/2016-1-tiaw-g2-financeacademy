@@ -186,5 +186,44 @@
   },
   "rendas": [],
   "despesas": [],
+  "respostasForm": [
+    {
+      "nivel": "Iniciante",
+      "faixa": "35-44",
+      "objetivos": [
+        "investimentos"
+      ],
+      "salario": "2200",
+      "comentario": "",
+      "id": "SoxvyPlALaM"
+    },
+    {
+      "nivel": "Intermediário",
+      "faixa": "25-34",
+      "objetivos": [
+        "aposentadoria"
+      ],
+      "salario": "2200",
+      "comentario": "",
+      "id": "PjfNFwzLvWg"
+    }
+  ],
+  "simulacoes": [],
+  "historicoVisitacao": [
+    {
+      "usuarioId": "SoxvyPlALaM",
+      "objetivos": [
+        "investimentos"
+      ],
+      "conteudosVisitados": [
+        {
+          "nome": "CDB",
+          "pagina": "investimentos.html",
+          "visitadoEm": "2026-06-29T01:19:54.297Z"
+        }
+      ],
+      "id": "ngpiJhP_cYE"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
