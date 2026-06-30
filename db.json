@@ -184,6 +184,52 @@
       }
     ]
   },
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "O que é uma reserva de emergência?",
+      "alternativas": [
+        "Dinheiro para viagens",
+        "Dinheiro para imprevistos",
+        "Dinheiro para compras",
+        "Dinheiro para lazer"
+      ],
+      "correta": 1
+    },
+    {
+      "id": 2,
+      "pergunta": "O que são juros compostos?",
+      "alternativas": [
+        "Juros sobre juros",
+        "Taxa bancária",
+        "Imposto",
+        "Desconto"
+      ],
+      "correta": 0
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual hábito ajuda no controle financeiro?",
+      "alternativas": [
+        "Comprar por impulso",
+        "Anotar receitas e despesas",
+        "Parcelar tudo",
+        "Ignorar gastos"
+      ],
+      "correta": 1
+    },
+    {
+      "id": 4,
+      "pergunta": "Qual investimento costuma ser considerado mais seguro?",
+      "alternativas": [
+        "Ações",
+        "Criptomoedas",
+        "Tesouro Direto",
+        "Apostas"
+      ],
+      "correta": 2
+    }
+  ],
   "rendas": [],
   "despesas": [],
   "respostasForm": [
@@ -247,6 +293,37 @@
         }
       ],
       "id": "HJYDoEVsb8Q"
+    }
+  ],
+  "ajudas": [
+    {
+      "id": "1",
+      "nome": "Luis Felipe",
+      "mensagem": "Preciso de ajuda com login",
+      "data": "2026-05-15"
+    },
+    {
+      "nome": "Thiago",
+      "mensagem": "Ajuda com o login",
+      "data": "2026-05-20T14:08:20.769Z",
+      "id": "MX3jpy2ruow"
+    }
+  ],
+  "redesSociais": [
+    {
+      "id": "1",
+      "nome": "Instagram",
+      "link": "https://instagram.com"
+    },
+    {
+      "id": "2",
+      "nome": "Facebook",
+      "link": "https://facebook.com"
+    },
+    {
+      "id": "3",
+      "nome": "LinkedIn",
+      "link": "https://linkedin.com"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
