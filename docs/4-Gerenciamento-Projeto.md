@@ -10,30 +10,44 @@ Organização da equipe e divisão de papéis: Durante a imersão e análise do 
 
 ### Sprint 1
 
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- Main:Iniciar Teste: Andréia Lopes do Couto Santo
+- Simulador Investimentos: Henrique Shevchenko da Cunha Lopes Ferreira
+- Footer: Luís Felipe de Oliveira Silva
+- Categorias: Thiago Henrique Marques Soares
+- Header: Thiago Pereira Figueiredo
 
 ### Sprint 2
 
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- Configurações: Conteúdos ofertados aos usuários : Andréia Lopes do Couto Santo
+- Configurações: Conteúdos ofertados aos usuários : Henrique Shevchenko da Cunha Lopes Ferreira
+- Quiz de teste de conhecimentos : Luís Felipe de Oliveira Silva
+- Simulador de métodos e simulador de orçamentos : Thiago Henrique Marques Soares 
+- Configurações: Página de Login, JavaScript : Thiago Pereira Figueiredo
 
 ## Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme exemplo abaixo.
 
-Atualizado em: 09/01/2005
+Atualizado em: 30/06/2026
+Sprint 1:
 
-| Responsável | Tarefa/Requisito | Iniciado em |   Prazo    | Status | Terminado em |
-| :---------- | :--------------- | :---------: | :--------: | :----: | :----------: |
-| AlunaX      | Home-Page        | 01/01/2005  | 07/01/2005 |   ✔️   |  05/01/2005  |
-| AlunaZ      | CSS Unificado    | 03/01/2005  | 10/01/2005 |   📝   |              |
-| AlunoY      | Página de login  | 01/01/2005  | 07/01/2005 |   ⌛   |              |
-| AlunoK      | Script de login  |             | 12/01/2005 |   ❌   |              |
+| Responsável | Tarefa/Requisito | Iniciado em |   Prazo   | Status | Terminado em |
+|:------------|:-----------------|:-----------:|:----------:|:------:|:-------------:|
+| Andreia     | Iniciar teste    | 19/04/2026  | 19/05/2026 |   ✔️   | 18/05/2026    |
+| Henrique    | Simulador        | 19/04/2026  | 19/05/2026 |   ✔️   | 18/05/2026    |
+| Luís        | Footer           | 19/04/2026  | 19/05/2026 |   ✔️   | 18/05/2026    |
+| Thiago H    | Categorias       | 19/04/2026  | 19/05/2026 |   ✔️   | 18/05/2026    |
+| Thiago P    | Configurações    | 19/04/2026  | 19/05/2026 |   ✔️   | 18/05/2026    |
+
+Sprint 2:
+
+| Responsável | Tarefa/Requisito | Iniciado em |   Prazo   | Status | Terminado em |
+|:------------|:-----------------|:-----------:|:----------:|:------:|:-------------:|
+| Andreia     | Conteúdos        | 16/05/2026  | 07/06/2026 |   ✔️   | 06/06/2026    |
+| Henrique    | Conteúdos        | 16/05/2026  | 07/06/2026 |   ✔️   | 06/06/2026    |
+| Luís        | Quiz             | 16/05/2026  | 07/06/2026 |   ✔️   | 06/06/2026    |
+| Thiago H    | Simuladores      | 16/05/2026  | 07/06/2026 |   ✔️   | 06/06/2026    |
+| Thiago P    | Login            | 16/05/2026  | 07/06/2026 |   ✔️   | 06/06/2026    |
 
 Legenda:
 
