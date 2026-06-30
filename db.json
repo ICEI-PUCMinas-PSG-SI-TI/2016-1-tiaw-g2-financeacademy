@@ -223,6 +223,20 @@
         }
       ],
       "id": "ngpiJhP_cYE"
+    },
+    {
+      "usuarioId": "PjfNFwzLvWg",
+      "objetivos": [
+        "aposentadoria"
+      ],
+      "conteudosVisitados": [
+        {
+          "nome": "INSS",
+          "pagina": "aposentadoria.html",
+          "visitadoEm": "2026-06-30T12:35:42.389Z"
+        }
+      ],
+      "id": "HJYDoEVsb8Q"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
