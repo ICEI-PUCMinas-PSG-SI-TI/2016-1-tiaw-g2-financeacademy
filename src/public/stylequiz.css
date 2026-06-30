@@ -1,0 +1,124 @@
+#quiz-financeiro{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+#quiz-financeiro .quiz-container{
+
+    width:700px;
+    max-width:90%;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+#quiz-financeiro #inicio{
+    text-align:center;
+}
+
+#quiz-financeiro #inicio p{
+    margin:20px 0;
+}
+
+#quiz-financeiro #btnIniciar{
+
+    padding:10px 20px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2b3d5b;
+    color:white;
+
+    cursor:pointer;
+}
+
+#quiz-financeiro #btnIniciar:hover{
+    background:#1e293b;
+}
+
+#quiz-financeiro #quiz{
+    display:none;
+}
+
+#quiz-financeiro #contador{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+#quiz-financeiro #pergunta{
+    margin-bottom:20px;
+}
+
+#quiz-financeiro .opcao{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:none;
+    border-radius:8px;
+
+    background:#e2e8f0;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+#quiz-financeiro .opcao:hover{
+    background:#cbd5e1;
+}
+
+#quiz-financeiro .correta{
+    background:#22c55e;
+    color:white;
+}
+
+#quiz-financeiro .errada{
+    background:#ef4444;
+    color:white;
+}
+
+#quiz-financeiro #proxima{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2b3d5b;
+    color:white;
+
+    cursor:pointer;
+}
+
+#quiz-financeiro #proxima:hover{
+    background:#1e293b;
+}
+
+#quiz-financeiro #resultado{
+
+    margin-top:20px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    text-align:center;
+}

@@ -9,6 +9,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"href="stylefooter.css">
+  <link rel="stylesheet"href="stylequiz.css">
   <title>Financy Academy</title>
 </head>
 
@@ -137,6 +138,50 @@
       </div>
     </main>
 
+
+<div id="quiz-financeiro">
+
+    <div class="quiz-container">
+
+        <div id="inicio">
+
+            <h1>Quiz de Educação Financeira</h1>
+
+            <p>
+                Teste seus conhecimentos sobre
+                finanças e investimentos.
+            </p>
+
+            <button id="btnIniciar">
+                Iniciar Quiz
+            </button>
+
+        </div>
+
+        <!-- Quiz -->
+        <div id="quiz">
+
+            <p id="contador"></p>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas"></div>
+
+            <button id="proxima">
+                Próxima
+            </button>
+
+            <p id="resultado"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
  <div id="sim" class="py-5">
     <h2 class="text-center font-monospace text-white mb-4">Quando você escolhe<br>aprender, você escolhe<br>prosperar.
     </h2>
@@ -151,6 +196,7 @@
               <i class="fa-solid fa-chart-line fs-4"></i>
             </div>
             <div>
+
               <h2 class="m-0 fw-bold fs-3 text-dark">Simulador Financeiro</h2>
               <p class="text-muted m-0 fs-6">Projete o rendimento do seu dinheiro em tempo real</p>
             </div>
@@ -363,6 +409,7 @@
   <script src="simulacoes.js"></script>
   <script src="configuracoes.js"></script>
   <script src="scriptfooter.js"></script>
+  <script src="scriptquiz.js"></script>
 </body>
 
 </html>
