@@ -48,20 +48,3 @@ input[type=number] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
-
-/*Footer*/
-#rodape .footer{
-    background-color: #f2f2f2;
-    width: calc(100% - 80px); 
-    margin-left: 40px;
-    margin-right: 40px;
-}
-#rodape .footer h2{
-    color: #328C73 !important;
-}
-#rodape .footer h5 button{
-    background-color: #37486C;
-}
-#rodape .footer p{
-    color: #328C73;
-}
