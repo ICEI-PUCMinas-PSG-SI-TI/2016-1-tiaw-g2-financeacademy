@@ -1,6 +1,4 @@
-// =============================================
 // TOGGLE VIEW E TEMA
-// =============================================
 function toggleView(viewName) {
   const homeView = document.getElementById('view_home');
   const dashView = document.getElementById('view_dashboard');
@@ -14,13 +12,17 @@ function toggleView(viewName) {
   }
 }
 
-function setTheme(theme) {
-  document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
+//Controla a transição dinâmica de classes de tema no elemento body
+function setTheme(themeName) {
+    // Remove classes anteriores para evitar conflitos de estilo
+    document.body.classList.remove('light-theme', 'dark-theme');
+    
+    // Aplica a nova classe selecionada pelo usuário
+    document.body.classList.add(themeName + "-theme");
 }
 
-// =============================================
+
 // CONFIGURAÇÕES - CARDS BASEADOS NO FORMULÁRIO
-// =============================================
 document.addEventListener('DOMContentLoaded', function () {
   const mainConfig = document.querySelector('.corpo');
   const conteudoConfig = document.querySelector('.linkCont');
